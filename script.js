@@ -106,10 +106,10 @@ map.on('load', () => {
             maxcollisions = feature.properties.COUNT
         }
     })
-    console.log("maximum collisions is" + maxcollisions)
+    //console.log("maximum collisions is" + maxcollisions) to see the max. no. of collisions
 
 
-    document.getElementById('hexgridbutton').addEventListener('click', () => {
+    document.getElementById('hexgridbutton').addEventListener('click', () => { //making the hexgrid appear on clicking the Hexgrid button
         map.addSource('hexgrid_to', {
             "type": "geojson",
             "data": hexgridto
@@ -132,7 +132,10 @@ map.on('load', () => {
                     35, '#F1C40F',
                     40, '#F39C12',
                     45, '#E67E22',
-                    50, '#D35400'
+                    50, '#D35400',
+                    55, '#ad1e14',
+                    60, '#681111',
+                    65, '#460a06'
                 ],
                 'fill-opacity': 0.8,
                 'fill-outline-color': "black"
@@ -171,7 +174,7 @@ map.on('click', 'hexagons', (e) => {
         .addTo(map); //Show popup on map
 });
 
-//Add event listeneer which returns map view to full screen on button click
+//Add event listener which returns map view to full screen on button click
 document.getElementById('returnbutton').addEventListener('click', () => {
     map.flyTo({
         center: [-79.39, 43.65],
@@ -180,7 +183,7 @@ document.getElementById('returnbutton').addEventListener('click', () => {
     });
 });
 
-//Create geocoder variable
+//Adding a search box - create geocoder variable
 const geocoder = new MapboxGeocoder({
     accessToken: mapboxgl.accessToken,
     mapboxgl: mapboxgl,

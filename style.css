@@ -1,6 +1,6 @@
 .map {
     position: absolute;
-    top: 10%;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
@@ -12,7 +12,7 @@
     font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', sans-serif;
     padding: 1;
     width: 180px;
-    background-color: rgb(221, 255, 255);
+    background-color: rgb(138, 220, 234, 0.9);
 }
 
 .map-overlay-search {
@@ -25,6 +25,7 @@
     padding: 20px;
     overflow: visible;
     box-shadow: 5px 5px 5px rgba(34, 26, 26, 0.533);
+    border-radius: 10px;
 }
 
 #returnbutton {
@@ -45,14 +46,14 @@
 .legend {
     position: absolute;
     background-color: #f8fbfc;
-    border-radius: 5px;
+    border-radius: 10px;
     bottom: 0;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     box-shadow: 5px 5px 5px rgba(34, 26, 26, 0.533);
     /*horizontal shadow, vertical shadow, size of shadow, color*/
     font: 14px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
     padding: 10px;
-    right: 10px;
+    right: 20px;
     z-index: 1;
 }
 
