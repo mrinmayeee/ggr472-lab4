@@ -1,8 +1,72 @@
 .map {
     position: absolute;
-    top: 0;
+    top: 10%;
     bottom: 0;
     left: 0;
     right: 0;
     width: 100%;
+}
+
+/* formatting for the popup boxes*/
+.mapboxgl-popup-content {
+    font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', sans-serif;
+    padding: 1;
+    width: 180px;
+    background-color: rgb(221, 255, 255);
+}
+
+.map-overlay-search {
+    position: absolute;
+    font-size: medium;
+    background: rgba(138, 220, 234, 0.8);
+    top: 2%;
+    left: 2%;
+    margin: 10px 0 10px;
+    padding: 20px;
+    overflow: visible;
+    box-shadow: 5px 5px 5px rgba(34, 26, 26, 0.533);
+}
+
+#returnbutton {
+
+    position: relative;
+    margin: 10px 0 0px;
+    width: 100%;
+}
+
+
+#hexgridbutton {
+
+    position: relative;
+    margin: 10px 0 0px;
+    width: 100%;
+}
+
+.legend {
+    position: absolute;
+    background-color: #f8fbfc;
+    border-radius: 5px;
+    bottom: 0;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 5px rgba(34, 26, 26, 0.533);
+    /*horizontal shadow, vertical shadow, size of shadow, color*/
+    font: 14px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    padding: 10px;
+    right: 10px;
+    z-index: 1;
+}
+
+.legend h4 {
+    margin: 0 0 10px;
+}
+
+.legend div span {
+    display: inline-block;
+    border-radius: 50%;
+    /*curve border to make a circle*/
+    height: 10px;
+    /*size of circle*/
+    width: 10px;
+    margin-right: 5px;
+    /*position of circle*/
 }
